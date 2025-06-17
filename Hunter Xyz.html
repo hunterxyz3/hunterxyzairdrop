@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hunter Xyz Bot</title>
+  <!-- Google Font লিংক করা হয়েছে -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Styling -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: lab(100% 0.01 -0.01); /* ব্যাকগ্রাউন্ড কালার */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: url('Photo/hunter1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.417);
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px);
+}
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .logo img {
+      width: 100px;
+      border-radius: 50%; /* গোল লোগো */
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 22px;
+      margin: 5px 0;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .socials a img {
+      width: 25px;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 20px 0 10px;
+      text-align: center;
+    }
+
+    .card {
+      background: #f1f5f9;
+      margin-bottom: 10px;
+      padding: 12px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .card:hover {
+      background: #e2e8f0;
+    }
+
+    .card img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+    }
+
+    .card span {
+      font-size: 15px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- ✅ এখানে তোমার বটের লোগো বসাও (URL এর জায়গায়) -->
+    <div class="logo">
+      <img src="Photo/hunter.jpg" alt="Hunter Xyz Logo">
+    </div>
+
+    <!-- ✅ এই টাইটেল লাইনটায় নাম থাকবে -->
+    <h1>Hunter X'yz Airdrop</h1>
+
+    <!-- ✅ এখানে YouTube, Twitter, Telegram এর লিংক ও আইকন বসানো -->
+    <div class="socials">
+      <a href="https://www.youtube.com/@HunterXyzAirdrop" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png" />
+      </a>
+      <a href="https://x.com/hunter_xyz3" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/000000/twitter--v1.png" />
+      </a>
+      <a href="https://t.me/HunterXyzAirdrop" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/000000/telegram-app.png" />
+      </a>
+    </div>
+
+    <!-- ✅ Twitter Follow বাটন, এখানে লিংক ও ছবি পরিবর্তন করা যাবে -->
+    <div class="card" onclick="window.open('https://x.com/hunter_xyz3', '_blank')">
+      <img src="https://img.icons8.com/color/48/twitter--v1.png" />
+      <span>Follow My Twitter</span>
+    </div>
+
+    <!-- ✅ Daily Checking Airdrop সেকশন শুরু -->
+    <div class="section-title">⭕ Daily Checking Airdrop ⭕</div>
+
+    <!-- ✅ এই Airdrop কার্ডে ছবি, টেক্সট ও লিংক বসানো যাবে -->
+    <div class="card" onclick="window.open('https://airdrop1.link', '_blank')">
+      <img src="Photo/hunter.jpg" /> <!-- এখানেই প্রজেক্টের ফটো দিবে -->
+      <span>Airdrop 1 - Project Name</span> <!-- প্রজেক্টের নাম -->
+    </div>
+
+    <!-- ✅ আরও একটি Airdrop কার্ড -->
+    <div class="card" onclick="window.open('https://airdrop2.link', '_blank')">
+      <img src="Photo/hunter.jpg" />
+      <span>Airdrop 2 - Project Name</span>
+    </div>
+
+    <!-- ✅ Testnet Airdrop সেকশন শুরু -->
+    <div class="section-title">⭕ Testnet Airdrop ⭕</div>
+
+    <div class="card" onclick="window.open('https://testnet1.link', '_blank')">
+      <img src="Photo/hunter.jpg" />
+      <span>Testnet 1 - Project Name</span>
+    </div>
+
+    <div class="card" onclick="window.open('https://testnet2.link', '_blank')">
+      <img src="Photo/hunter.jpg" />
+      <span>Testnet 2 - Project Name</span>
+    </div>
+
+    <!-- ✅ DePin Mining সেকশন শুরু -->
+    <div class="section-title">⭕ DePin Network Mining ⭕</div>
+
+    <div class="card" onclick="window.open('https://depin1.link', '_blank')">
+      <img src="Photo/hunter.jpg" />
+      <span>DePin 1 - Project Name</span>
+    </div>
+
+    <div class="card" onclick="window.open('https://depin2.link', '_blank')">
+      <img src="Photo/hunter.jpg" />
+      <span>DePin 2 - Project Name</span>
+    </div>
+
+  </div>
+</body>
+</html>
